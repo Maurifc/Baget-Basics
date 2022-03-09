@@ -29,7 +29,9 @@ rm -rf packages
 ```
 
 ### Add your BaGet server as source
+```bash
 nuget sources Add -Name "MyServer" -Source -ConfigFile nuget.config
+```
 
 ### Install the package, now from your BaGet server
 ```bash
@@ -45,3 +47,13 @@ nuget list -ConfigFile nuget.config
 ```bash
 nuget delete Newtonsoft.Json 13.0.1 -Source http://localhost:5555 -apikey NUGET-SERVER-API-KEY
 ```
+
+## References:
+
+[Containerize an app with Docker tutorial - .NET | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=linux)
+
+[Installing NuGet client tools | Microsoft Docs](https://docs.microsoft.com/en-us/nuget/install-nuget-client-tools)
+
+[loic-sharma/BaGet: A lightweight NuGet and symbol server](https://github.com/loic-sharma/BaGet)
+
+[Baget installation with docker](https://loic-sharma.github.io/BaGet/installation/docker/)

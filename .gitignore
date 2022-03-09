@@ -1,5 +1,7 @@
 # Baget
 baget-data
+packages
+tmp 
 
 *.swp
 *.*~
